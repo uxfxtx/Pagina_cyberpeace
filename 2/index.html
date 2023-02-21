@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+  <!--Aquí empieza la barra de navegación-->
+    <nav id="navigation">
+        <img src="images/Ciber4.png" alt="" class="logo">
+        <nav class="nav_section">
+            <ul class="nav_links">
+                <li class="items"><a href="#">Nosotros</a></li><li class="items"><a href="#">Servicios</a></li><li class="items"><a href="#">Marcas</a></li><li class="items"><a href="#">Blog</a></li><li class="items"><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="cta"><button>Contact</button></a>
+    </nav>
+   <!-- <div class="label_video">
+      <h1> TU EMPRESA ESTÁ <BR> PROTEGIDA DE UN</h1>
+    </div>-->
+  <div class="container_video">
+    <video muted autoplay loop>
+        <source src="videos/Futuristic interface _ HUD sound effects.mp4"
+        type="video/mp4">
+    </video>
+  </div>
+
+   <div class="container_cards">
+
+   </div>
+   
+
+
+
+ 
+
+<script>
+var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+if (prevScrollpos > currentScrollPos) {
+  document.getElementById("navigation").style.top = "0";
+} else if(prevScrollpos > 700){
+  document.getElementById("navigation").style.top = "-100%";
+}
+prevScrollpos = currentScrollPos;
+}
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
